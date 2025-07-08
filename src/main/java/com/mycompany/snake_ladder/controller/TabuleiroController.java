@@ -898,7 +898,7 @@ public class TabuleiroController {
             posicaoLabel.setStyle("-fx-font-size: 12px;");
             containerJogador.getChildren().add(posicaoLabel);
             
-            // Destacar jogador que vai jogar (vez atual)
+            // Destacar jogador que vai jogar (vez atual)..
             if (i == indiceJogadorVez) {
                 containerJogador.setStyle(containerJogador.getStyle() + "-fx-background-color: #e8f5e8; -fx-border-color: #4caf50; -fx-border-width: 2px;");
                 // Adicionar indicador de vez....
