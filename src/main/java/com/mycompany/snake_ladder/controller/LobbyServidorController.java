@@ -14,7 +14,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.*;
 import java.util.stream.Collectors;
-
+/*Conexao estabelecida */
 /**
  * Controlador para o lobby do servidor no jogo Cobras e Escadas.
  * Gerencia as conexões dos clientes, a criação do jogo e a comunicação em rede.
