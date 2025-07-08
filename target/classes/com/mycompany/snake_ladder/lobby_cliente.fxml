@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.mycompany.snake_ladder.controller.LobbyClienteController" prefWidth="600" prefHeight="400">
+    <children>
+        <Label layoutX="150" layoutY="40" text="Snake and Ladders" style="-fx-font-size: 32px; -fx-font-weight: bold;"/>
+        <Label layoutX="260" layoutY="100" text="Cliente" style="-fx-font-size: 20px;"/>
+        
+        <Label layoutX="70" layoutY="170" text="Inserir IP"/>
+        <TextField fx:id="campoIP" layoutX="70" layoutY="200" prefWidth="120" text="10.1.187.184"/>
+        
+        <Label layoutX="240" layoutY="170" text="Inserir Porta"/>
+        <TextField fx:id="campoPorta" layoutX="240" layoutY="200" prefWidth="120" text="3000"/>
+        
+        <Label layoutX="410" layoutY="170" text="Inserir Nome"/>
+        <TextField fx:id="campoNome" layoutX="410" layoutY="200" prefWidth="120" text="jogador1"/>
+        
+        <Button fx:id="botaoComecar" layoutX="220" layoutY="300" prefWidth="160" prefHeight="40" text="Começar jogo" onAction="#onComecarJogo" style="-fx-background-color: #2222ff; -fx-text-fill: white; -fx-font-size: 18px;"/>
+    </children>
+</AnchorPane>

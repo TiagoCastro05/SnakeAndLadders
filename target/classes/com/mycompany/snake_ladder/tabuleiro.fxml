@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+
+
+<ScrollPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.snake_ladder.controller.TabuleiroController" fitToWidth="true" fitToHeight="true" style="-fx-background-color: #e3e3e3;">
+    <BorderPane style="-fx-background-color: #e3e3e3;" minWidth="800" minHeight="600" prefWidth="1000" prefHeight="750">
+        <top>
+            <VBox spacing="8" style="-fx-padding: 8;">
+                <Label fx:id="labelVez" text="Vez do jogador: " style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+                <HBox spacing="15" alignment="CENTER">
+                    <HBox fx:id="painelJogadores" spacing="15" alignment="CENTER" style="-fx-padding: 8; -fx-background-color: #f5f5f5; -fx-border-color: #cccccc; -fx-border-width: 1px; -fx-border-radius: 5px;">
+                        <!-- Os jogadores serão adicionados dinamicamente aqui -->
+                    </HBox>
+                    <VBox fx:id="painelVitorias" spacing="4" alignment="CENTER" style="-fx-padding: 8; -fx-background-color: #fff3cd; -fx-border-color: #ffeaa7; -fx-border-width: 2px; -fx-border-radius: 5px;">
+                        <Label text="🏆 VITÓRIAS" style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #d68910;"/>
+                        <!-- As vitórias serão adicionadas dinamicamente aqui -->
+                    </VBox>
+                </HBox>
+            </VBox>
+        </top>
+        <center>
+            <StackPane alignment="CENTER" style="-fx-padding: 8;">
+                <GridPane fx:id="gridTabuleiro" style="-fx-background-color: white; -fx-border-color: #2196f3; -fx-border-width: 3px; -fx-padding: 15;" maxWidth="600" maxHeight="600"/>
+                <Pane fx:id="overlayPane" pickOnBounds="false" mouseTransparent="true" maxWidth="600" maxHeight="600"/>
+            </StackPane>
+        </center>
+       <bottom>
+        <BorderPane style="-fx-padding: 15;">
+            <left>
+                <HBox spacing="15" alignment="CENTER_LEFT">
+                    <Button fx:id="botaoRolar" text="Rolar dado" onAction="#rolarDado" style="-fx-font-size: 14px; -fx-pref-width: 100;"/>
+                    <Label fx:id="labelDado" text="Resultado: " style="-fx-font-size: 14px;"/>
+                    <ImageView fx:id="dadoImage" fitWidth="48" fitHeight="48"/>
+                    <TextArea fx:id="areaStatus" editable="false" wrapText="true" prefRowCount="2" prefWidth="250" maxWidth="300" style="-fx-font-size: 12px;"/>
+                </HBox>
+            </left>
+            <right>
+                <Button fx:id="botaoSair" text="Sair" onAction="#sair" style="-fx-font-size: 14px; -fx-pref-width: 80;"/>
+            </right>
+        </BorderPane>
+    </bottom>
+    </BorderPane>
+</ScrollPane>

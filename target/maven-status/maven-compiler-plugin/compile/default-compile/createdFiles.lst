@@ -1,0 +1,14 @@
+com\mycompany\snake_ladder\controller\TabuleiroController.class
+com\mycompany\snake_ladder\model\Casas.class
+com\mycompany\snake_ladder\AppCliente.class
+com\mycompany\snake_ladder\App.class
+com\mycompany\snake_ladder\AppServidor.class
+com\mycompany\snake_ladder\model\Peca.class
+module-info.class
+com\mycompany\snake_ladder\controller\LobbyClienteController.class
+com\mycompany\snake_ladder\model\Tabuleiro.class
+com\mycompany\snake_ladder\controller\LobbyServidorController.class
+com\mycompany\snake_ladder\model\Dado.class
+com\mycompany\snake_ladder\model\Comunica.class
+com\mycompany\snake_ladder\model\Jogo.class
+com\mycompany\snake_ladder\model\Jogador.class

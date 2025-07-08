@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.mycompany.snake_ladder.controller.LobbyServidorController" style="-fx-background-color: #f7f7f7;" prefWidth="700" prefHeight="500">
+    <top>
+        <VBox alignment="CENTER" spacing="20">
+            <Label text="Snake and Ladders" style="-fx-font-size: 40px; -fx-font-weight: bold;"/>
+            <Label text="Servidor" style="-fx-font-size: 24px;"/>
+        </VBox>
+    </top>
+    <center>
+        <HBox alignment="CENTER" spacing="80">
+            <VBox alignment="CENTER_LEFT" spacing="25">
+                <Label text="IP" style="-fx-font-size: 18px;"/>
+                <TextField fx:id="campoIP" text="10.1.187.184" prefWidth="180" style="-fx-font-size: 16px;"/>
+                <Label text="Porta" style="-fx-font-size: 18px;"/>
+                <TextField fx:id="campoPorta" text="3000" prefWidth="180" style="-fx-font-size: 16px;"/>
+            </VBox>
+            <VBox alignment="CENTER" spacing="20">
+                <Label text="Lobby" style="-fx-font-size: 18px;"/>
+                <ListView fx:id="listaJogadores" prefWidth="220" prefHeight="200" style="-fx-font-size: 16px;"/>
+            </VBox>
+        </HBox>
+    </center>
+    <bottom>
+        <HBox alignment="CENTER" style="-fx-padding: 40 0 30 0;">
+            <Button fx:id="botaoIniciar" text="Iniciar Jogo" onAction="#onIniciarJogo" style="-fx-font-size: 22px; -fx-background-color: #bfcfff;" prefWidth="240" prefHeight="50"/>
+        </HBox>
+    </bottom>
+</BorderPane>
