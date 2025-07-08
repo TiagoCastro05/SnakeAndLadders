@@ -5,7 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-
+//Concluido 1 de 4
 /**
  * Classe principal da aplicação Cobras e Escadas.
  * Responsável por inicializar a aplicação JavaFX e determinar se será executada
